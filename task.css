@@ -1,0 +1,519 @@
+/* ========== 题目 ========== */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+
+    /* TODO C1：
+       让页面文字居中
+    */
+
+}
+
+.container {
+    width: 620px;
+    background: linear-gradient(145deg, #ffffff, #f0f4ff);
+    margin: 30px auto;
+    padding: 30px 35px;
+
+    /* TODO C2：
+       添加 8px 圆角
+    */
+
+
+    /* TODO C3：
+       添加阴影
+       水平0
+       垂直4px
+       模糊10px
+       颜色 #eee
+    */
+
+
+    /* TODO C4：
+       添加 1px 边框
+       颜色 #ddd
+    */
+
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
+}
+
+
+h1 {
+    color: #2c3e50;
+
+    /* TODO C5：
+       字体大小 28px
+       加粗
+       下边距20px
+    */
+    
+    
+
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 2px;
+}
+
+h2 {
+    color: #5a3d8a;
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 3px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border-radius: 2px;
+    margin: 6px auto 0;
+}
+
+
+p {
+    color: #555;
+    line-height: 28px;
+
+    /* TODO C6：
+       首行缩进 2em
+    */
+    
+
+    font-size: 16px;
+}
+
+
+img {
+    width: 200px;
+
+    /* TODO C7：
+       添加蓝色边框
+       3px 实线
+       颜色 #3498db
+    */
+    
+
+
+    /* TODO C8：
+       圆角 8px
+       水平居中
+    */
+    
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+
+.btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    cursor: pointer;
+
+    /* TODO C9：
+       添加 20px 圆角
+    */
+    
+
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    margin: 5px 8px;
+}
+
+/* TODO C10：
+   鼠标放按钮上：
+   放大 1.05 倍
+*/
+.btn:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+
+
+
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* ========== 自定义段落 ========== */
+/* TODO C11：
+   给 id 为 my-text 的段落：
+
+   字体大小 18px
+   添加下划线
+*/
+#my-text {
+   
+
+
+    color: #5a3d8a;
+    font-weight: 600;
+
+}
+
+/* ========== 列表 ========== */
+/* TODO C12：
+   列表去掉圆点
+*/
+ul {
+    
+}
+
+/* TODO C13：
+   li：
+   下边距10px
+   背景色 #f9f9f9
+   内边距 8px
+   圆角 4px
+*/
+li {
+    
+
+
+
+
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+li:hover {
+    transform: translateX(6px);
+    box-shadow: 0 3px 12px rgba(102, 126, 234, 0.2);
+}
+
+/* TODO C14：
+   子列表缩进20px
+*/
+ul ul {
+    
+
+
+    margin-top: 8px;
+
+}
+
+ul ul li {
+    background-color: #eef4ee;
+    border-left: 3px solid #764ba2;
+}
+
+/* ========== 链接 ========== */
+/* TODO C15：
+   a 标签：
+
+   颜色 #3498db
+   去掉下划线
+*/
+a {
+    
+
+
+
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 4px 8px;
+    border-radius: 6px;
+
+}
+
+a:hover {
+    color: #764ba2;
+    background: rgba(102, 126, 234, 0.1);
+    text-decoration: underline;
+}
+
+/* TODO C16：
+   已访问链接颜色：
+   #8e44ad
+*/
+a:visited {
+    
+
+}
+
+/* ========== 输入框 ========== */
+input[type="text"] {
+    padding: 10px 18px;
+    border: 2px solid #dde6ff;
+    border-radius: 25px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 220px;
+    background: #f8faff;
+}
+
+input[type="text"]:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+    background: white;
+}
+
+/* ========== 底部 ========== */
+/* TODO C17：
+   footer：
+
+   居中
+   上边距30px
+   字号14px
+   颜色 #999
+*/
+footer {
+    
+
+
+
+
+
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+
+}
+
+
+/* 以上为css题目部分，下面为卡通白菜的代码，完成css题目后可以看看哦~ */
+
+
+
+/* ==========================================
+   卡通白菜 - 右下角眼睛跟随鼠标
+   ========================================== */
+.cabbage {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 999;
+    cursor: pointer;
+    animation: cabbage-bounce 2.5s ease-in-out infinite;
+    user-select: none;
+    width: 100px;
+    height: 110px;
+}
+
+@keyframes cabbage-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* ===== 外层包裹叶子 ===== */
+.cabbage-outer-leaf {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.ol-1 {
+    width: 100px;
+    height: 85px;
+    background: radial-gradient(ellipse at 50% 60%, #7dcd7d, #4a9e4a);
+    border-radius: 50% 50% 40% 40%;
+    top: 5px;
+    left: 0;
+    transform: rotate(-15deg);
+    box-shadow: inset -5px -5px 15px rgba(0,60,0,0.2);
+}
+
+.ol-2 {
+    width: 95px;
+    height: 80px;
+    background: radial-gradient(ellipse at 50% 60%, #8ad48a, #55a855);
+    border-radius: 50% 50% 40% 40%;
+    top: 8px;
+    left: 5px;
+    transform: rotate(12deg);
+    box-shadow: inset 5px -5px 15px rgba(0,60,0,0.15);
+}
+
+.ol-3 {
+    width: 50px;
+    height: 60px;
+    background: radial-gradient(ellipse at 50% 70%, #6fc06f, #3d8f3d);
+    border-radius: 60% 40% 50% 50%;
+    top: -10px;
+    left: -8px;
+    transform: rotate(-35deg);
+    box-shadow: inset -3px -3px 10px rgba(0,60,0,0.2);
+}
+
+.ol-4 {
+    width: 50px;
+    height: 60px;
+    background: radial-gradient(ellipse at 50% 70%, #6fc06f, #3d8f3d);
+    border-radius: 40% 60% 50% 50%;
+    top: -10px;
+    right: -8px;
+    transform: rotate(35deg);
+    box-shadow: inset 3px -3px 10px rgba(0,60,0,0.2);
+}
+
+/* ===== 白菜身体 ===== */
+.cabbage-body {
+    position: relative;
+    width: 80px;
+    height: 75px;
+    background: radial-gradient(ellipse at 40% 30%, #c8f0c8, #7dcd7d);
+    border-radius: 50% 50% 42% 42%;
+    top: 12px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: inset -10px -10px 25px rgba(0, 80, 0, 0.25),
+                inset 10px 10px 25px rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+}
+
+/* 叶子纹理线条 */
+.cabbage-vein {
+    position: absolute;
+    background: rgba(60, 140, 60, 0.15);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.v1 {
+    width: 30px;
+    height: 40px;
+    top: 10px;
+    left: 8px;
+    transform: rotate(-20deg);
+}
+
+.v2 {
+    width: 25px;
+    height: 35px;
+    top: 15px;
+    right: 10px;
+    transform: rotate(15deg);
+}
+
+.v3 {
+    width: 20px;
+    height: 30px;
+    top: 20px;
+    left: 30px;
+}
+
+/* ===== 白菜脸 ===== */
+.cabbage-face {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 38px;
+    z-index: 2;
+}
+
+/* 眼睛 */
+.eye {
+    position: absolute;
+    width: 16px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    overflow: hidden;
+}
+
+.left-eye {
+    left: 5px;
+}
+
+.right-eye {
+    right: 5px;
+}
+
+/* 瞳孔 */
+.pupil {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: #2d2d2d;
+    border-radius: 50%;
+    top: 4px;
+    left: 3px;
+    transition: transform 0.05s linear;
+}
+
+.pupil::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+}
+
+/* 嘴巴 - 微笑 */
+.mouth {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 7px;
+    border-bottom: 2.5px solid #3a7a3a;
+    border-radius: 0 0 50% 50%;
+}
+
+/* 腮红 */
+.cabbage-cheek {
+    position: absolute;
+    width: 12px;
+    height: 8px;
+    background: rgba(255, 140, 140, 0.35);
+    border-radius: 50%;
+    top: 28px;
+    z-index: 2;
+}
+
+.cheek-left {
+    left: 8px;
+}
+
+.cheek-right {
+    right: 8px;
+}
+
+/* ===== 白菜根 ===== */
+.cabbage-stem {
+    position: relative;
+    width: 22px;
+    height: 20px;
+    background: linear-gradient(180deg, #d4e8d4, #b8d4b8);
+    border-radius: 0 0 12px 12px;
+    margin: -2px auto 0;
+    z-index: 1;
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.05);
+    top: 10px;
+}
