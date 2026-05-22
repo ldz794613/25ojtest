@@ -10,7 +10,8 @@ TODO J1：
 输出：
 你好，我是xxx
 */
-
+let name='LJR'
+console.log(name)
 
 
 
