@@ -69,7 +69,7 @@ TODO J5：
 
 改成：
 
-按钮被点击了！
+按钮被点击了！(result1元素中显示)
 */
 function showMessage() {
     
@@ -86,10 +86,10 @@ languages = ["JavaScript", "Python", "Java"]
 
 请完成以下操作：
 
-1. 使用 unshift() 在数组开头添加 "C++"
-2. 使用 shift() 移除数组的第一个元素
+1. 使用 unshift() 在数组开头添加 "C++"，并将结果打印一下
+2. 使用 shift() 移除数组的第一个元素，并将结果打印一下
 3. 创建函数 showArray(arr)，接收数组作为参数，
-   将数组内容输出到页面（id为result的元素中）
+   将数组内容输出到页面（id为result1的元素中）
    格式：数组中的元素用逗号分隔
 4. 调用 showArray(languages) 显示结果
 
@@ -116,7 +116,7 @@ scores（成绩，对象类型，包含math、english、chinese）
 
 然后创建函数 printStudent(obj)，
 接收student对象作为参数，
-将学生信息输出到页面（id为result的元素中），
+将学生信息输出到页面（id为result2的元素中），
 格式要求：
 姓名：xxx，年龄：xxx，性别：xxx，年级：xxx
 爱好：xxx、xxx
@@ -143,7 +143,7 @@ changeColor()
 
 提示：
 
-document.body.style.backgroundColor
+document.body.style.background
 */
 var colorIndex = 0;
 var bgColors = [

@@ -18,7 +18,7 @@ body {
     margin: 30px auto;
     padding: 30px 35px;
 
-    /* TODO C2：
+    /* TODO C1：
        添加 8px 圆角
     */
 
@@ -37,11 +37,11 @@ body {
        颜色 #ddd
     */
 
-    
+
     transition: transform 0.3s ease;
 }
 
-.container: /*添加伪类*/{
+.container: /*添加伪类,鼠标移入产生如下效果*/{
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
 }
@@ -118,7 +118,7 @@ img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img: /*添加伪类*/ {
+img: /*添加伪类,鼠标移入产生如下效果*/ {
     transform: scale(1.08) rotate(2deg);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
@@ -148,7 +148,7 @@ img: /*添加伪类*/ {
    鼠标放按钮上：
    放大 1.05 倍
 */
-.btn:/*添加伪类*/ {
+.btn:/*添加伪类,鼠标移入产生如下效果*/ {
     background: linear-gradient(135deg, #764ba2, #667eea);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
 
@@ -166,7 +166,7 @@ img: /*添加伪类*/ {
    字体大小 18px
    添加下划线
 */
-#my-text {
+  {
    
 
 
@@ -203,7 +203,7 @@ li {
 
 }
 
-li:/*添加伪类*/ {
+li:/*添加伪类,鼠标移入产生如下效果*/ {
     transform: translateX(6px);
     box-shadow: 0 3px 12px rgba(102, 126, 234, 0.2);
 }
@@ -257,6 +257,8 @@ a:hover {
 a:visited {
     
 
+
+
 }
 
 /* ========== 输入框 ========== */
@@ -304,6 +306,8 @@ footer {
 
 /* 以上为css题目部分，下面为卡通白菜的代码，完成css题目后可以看看哦~ */
 /* 以下没有题目了哦~ */
+
+
 
 
 
