@@ -82,17 +82,19 @@ function showMessage() {
 TODO J6：
 创建数组：
 
-["HTML","CSS","JavaScript"]
+languages = ["JavaScript", "Python", "Java"]
 
-输出：
+请完成以下操作：
 
-1. 第一个元素
-2. 数组长度
+1. 使用 unshift() 在数组开头添加 "C++"
+2. 使用 shift() 移除数组的第一个元素
+3. 创建函数 showArray(arr)，接收数组作为参数，
+   将数组内容输出到页面（id为result的元素中）
+   格式：数组中的元素用逗号分隔
+4. 调用 showArray(languages) 显示结果
 
-//多一点
 
 */
-
 
 
 
@@ -104,20 +106,26 @@ TODO J7：
 
 student
 
-包含：
+包含以下属性：
+name（姓名）
+age（年龄）
+gender（性别）
+grade（年级）
+hobbies（爱好，数组类型，至少包含2个爱好）
+scores（成绩，对象类型，包含math、english、chinese）
 
-name
-age
-score
+然后创建函数 printStudent(obj)，
+接收student对象作为参数，
+将学生信息输出到页面（id为result的元素中），
+格式要求：
+姓名：xxx，年龄：xxx，性别：xxx，年级：xxx
+爱好：xxx、xxx
+总成绩：xxx分
 
-输出：
+调用 printStudent(student) 显示结果
 
-student.name
 
-******
 */
-
-
 
 
 
@@ -156,6 +164,11 @@ function changeColor() {
 
 
 // 以上为js题目部分，下面为卡通白菜的代码，完成js题目后可以看看哦~
+// 以下没有题目了哦~
+
+
+
+
 
 // ==========================================
 // 卡通白菜 - 眼睛跟随鼠标转动
