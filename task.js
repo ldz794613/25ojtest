@@ -10,6 +10,8 @@ TODO J1：
 输出：
 你好，我是xxx
 */
+const name="LJR"
+console.log('你好，我是',name);
 
 
 
@@ -23,7 +25,8 @@ b = 20
 
 输出它们的和
 */
-
+const a=10,b=20;
+console.log(a+b)
 
 
 /*
@@ -38,7 +41,8 @@ isStudent = true
 否则输出：
 我不是学生
 */
-
+const isStudent = true;
+console.log(isStudent? '我是学生':'我不是学生');
 
 
 
@@ -52,8 +56,10 @@ sayHello()
 
 欢迎学习 JavaScript
 */
-
-
+const sayHello=()=>{
+    alert('欢迎学习 JavaScript')
+}
+sayHello();
 
 
 
@@ -72,8 +78,13 @@ TODO J5：
 按钮被点击了！
 */
 function showMessage() {
-    
+    console.log('click')
+    const res=document.getElementById('result')
+   res.innerText='按钮被点击了！'
 }
+let J5Btn=document.querySelector('#J5Btn');
+console.log(J5Btn)
+J5Btn.addEventListener('click',showMessage)
 
 
 
@@ -82,17 +93,31 @@ function showMessage() {
 TODO J6：
 创建数组：
 
-["HTML","CSS","JavaScript"]
+languages = ["JavaScript", "Python", "Java"]
 
-输出：
+请完成以下操作：
 
-1. 第一个元素
-2. 数组长度
+1. 使用 unshift() 在数组开头添加 "C++"
+2. 使用 shift() 移除数组的第一个元素
+3. 创建函数 showArray(arr)，接收数组作为参数，
+   将数组内容输出到页面（id为result的元素中）
+   格式：数组中的元素用逗号分隔
+4. 调用 showArray(languages) 显示结果
+
+
 */
+const languages = ["JavaScript", "Python", "Java"];
+languages.unshift('C++');
+console.log('unshift',languages);
+languages.shift()
+console.log('shifted',languages);
 
-
-
-
+const showArray=(arr)=>{
+    const result2=document.getElementById('result2');
+    const ans=languages.toString();
+    result2.innerText=ans;
+}
+showArray(languages)
 
 
 /*
@@ -101,21 +126,52 @@ TODO J7：
 
 student
 
-包含：
+包含以下属性：
+name（姓名）
+age（年龄）
+gender（性别）
+grade（年级）
+hobbies（爱好，数组类型，至少包含2个爱好）
+scores（成绩，对象类型，包含math、english、chinese）
 
-name
-age
-score
+然后创建函数 printStudent(obj)，
+接收student对象作为参数，
+将学生信息输出到页面（id为result的元素中），
+格式要求：
+姓名：xxx，年龄：xxx，性别：xxx，年级：xxx
+爱好：xxx、xxx
+总成绩：xxx分
 
-输出：
+调用 printStudent(student) 显示结果
 
-student.name
 */
-
-
-
-
-
+const student={
+    name:'孙笑川',
+    age:18,
+    gender:'male',
+    grade:'大三',
+    hobbies:['frontend','backend'],
+    scores:{
+        math:114,
+        english:514,
+        chinese:1919
+    }
+}
+const printStudent=(obj)=>{
+    const res3=document.getElementById('result3')
+    // const ans3=`姓名：${obj.name}，年龄：${obj.age}，性别：${obj.gender}，
+    // 年级：${obj.grade}
+    // 爱好：${obj.hobbies.toString()}
+    // 总成绩：${obj.scores.reduce((ac,cur)=>ac+cur,0)}分
+    // `
+    const ans3=`姓名：${obj.name}，年龄：${obj.age}，性别：${obj.gender}，
+    年级：${obj.grade}
+    爱好：${obj.hobbies.toString()}
+    总成绩：${obj.scores.math+obj.scores.english+obj.scores.chinese}分
+    `
+    res3.innerText=ans3;
+}
+printStudent(student)
 
 
 /*
@@ -143,14 +199,20 @@ var bgColors = [
 ];
 
 function changeColor() {
+    console.log('cur',colorIndex,document.body.style)
     colorIndex = (colorIndex + 1) % bgColors.length;
-    
-
+    // document.body.style.backgroundColor=bgColors[colorIndex];
+        document.body.style.background=bgColors[colorIndex];
 
 }
 
 
 // 以上为js题目部分，下面为卡通白菜的代码，完成js题目后可以看看哦~
+// 以下没有题目了哦~
+
+
+
+
 
 // ==========================================
 // 卡通白菜 - 眼睛跟随鼠标转动

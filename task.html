@@ -2,14 +2,21 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>25级-OJ测试</title>
 
     <!-- TODO H1：
          修改网页标题为：
          我的前端小测
+
+         引入css和js文件：
+         task.css
+         task.js
     -->
 
-    <link rel="stylesheet" href="answer.css">
+    <title>25级-OJ测试</title>
+    <link rel="stylesheet" href="./task.css" >
+
+
+
 </head>
 
 <body>
@@ -35,7 +42,11 @@
              CSS
              JavaScript
         -->
-        
+        <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>js</li>
+        </ul>
 
         <!-- TODO H3：
              给 HTML 添加嵌套列表：
@@ -51,7 +62,7 @@
         <!-- TODO H4：
              修改 href 为你喜欢的网站
         -->
-        <a href="https://www.example.com" target="_blank">
+        <a href="https://www.github.com" target="_blank">
             点击访问网站
         </a>
 
@@ -62,13 +73,14 @@
              使用相对路径
              宽度 150px
         -->
-        
+        <img src="1.png" style="width: 150px;">
 
         <!-- TODO H6：
              添加一个输入框
              提示文字：
              请输入名字
         -->
+        <input placeholder="请输入名字">
         
 
         <!-- TODO H7：
@@ -78,20 +90,31 @@
 
              内容自定
         -->
-        
+        <p id="my-text">
+            my-text
+        </p>
 
         <h2>JavaScript练习区域</h2>
 
         <p id="result">
-            这里显示JS结果
+            这里显示'J5'的结果
+        </p>
+        <p id="result2">
+            这里显示J6结果
+        </p>
+        <p id="result3">
+            这里显示J7结果
         </p>
 
         <!-- TODO H8：
              点击按钮执行 showMessage()
         -->
-        <button class="btn">
+        <button class="btn" id="J5Btn" >
             点我一下
         </button>
+        <!-- <button class="btn" id="J5Btn" onclick="showMessage()">
+            点我一下
+        </button> -->
 
         <br><br>
 
@@ -101,14 +124,22 @@
              调用：
              changeColor()
         -->
-        <button class="btn">
+        <button class="btn" onclick="changeColor()">
             切换背景颜色
         </button>
 
 
     </div>
 
+
+
+
  <!-- 以上是HTML题目部分，下面为卡通白菜的代码，完成HTML题目后可以看看哦~ -->
+ <!-- 以下没有题目了哦~ -->
+
+
+
+
 
     <!-- 卡通白菜 -->
     <div class="cabbage" id="cabbage">
@@ -139,8 +170,7 @@
         <!-- 白菜根 -->
         <div class="cabbage-stem"></div>
     </div>
-
-    <script src="answer.js"></script>
+    <script  src="./task.js" ></script>
 
 </body>
 </html>

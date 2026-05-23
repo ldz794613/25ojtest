@@ -9,7 +9,9 @@ body {
     /* TODO C1：
        让页面文字居中
     */
-
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: center;
 }
 
 .container {
@@ -21,7 +23,7 @@ body {
     /* TODO C2：
        添加 8px 圆角
     */
-
+    border-radius: 8px;
 
     /* TODO C3：
        添加阴影
@@ -30,17 +32,18 @@ body {
        模糊10px
        颜色 #eee
     */
-
+    box-shadow: 0 4px 10px #eee;
 
     /* TODO C4：
        添加 1px 边框
        颜色 #ddd
     */
-
+    border: 1px solid #ddd;
+    
     transition: transform 0.3s ease;
 }
 
-.container:hover {
+.container:hover{
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
 }
@@ -54,7 +57,9 @@ h1 {
        加粗
        下边距20px
     */
-    
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 20px;
     
 
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -91,7 +96,7 @@ p {
     /* TODO C6：
        首行缩进 2em
     */
-    
+    text-indent: 2em;
 
     font-size: 16px;
 }
@@ -105,14 +110,15 @@ img {
        3px 实线
        颜色 #3498db
     */
-    
+    border: 3px solid #3498db;
 
 
     /* TODO C8：
        圆角 8px
        水平居中
     */
-    
+    border-radius: 8px;
+    text-align: center;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -133,7 +139,7 @@ img:hover {
     /* TODO C9：
        添加 20px 圆角
     */
-    
+    border-radius: 20px;
 
     font-size: 16px;
     font-weight: 600;
@@ -150,7 +156,7 @@ img:hover {
 .btn:hover {
     background: linear-gradient(135deg, #764ba2, #667eea);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-
+    transform: scale(1.05);
 
 
 }
@@ -162,12 +168,12 @@ img:hover {
 /* ========== 自定义段落 ========== */
 /* TODO C11：
    给 id 为 my-text 的段落：
-
    字体大小 18px
    添加下划线
 */
 #my-text {
-   
+    font-size: 18px;
+    text-decoration:underline;
 
 
     color: #5a3d8a;
@@ -180,7 +186,7 @@ img:hover {
    列表去掉圆点
 */
 ul {
-    
+    list-style: none;
 }
 
 /* TODO C13：
@@ -191,8 +197,10 @@ ul {
    圆角 4px
 */
 li {
-    
-
+    margin-bottom: 10px;
+    background-color:  #f9f9f9;
+    padding: 8px;
+    border-radius: 4px;
 
 
 
@@ -213,7 +221,7 @@ li:hover {
 */
 ul ul {
     
-
+    text-indent: 20px;
 
     margin-top: 8px;
 
@@ -233,8 +241,8 @@ ul ul li {
 */
 a {
     
-
-
+    text-decoration: none;
+    color:#3498db;
 
     font-weight: 600;
     font-size: 16px;
@@ -255,7 +263,7 @@ a:hover {
    #8e44ad
 */
 a:visited {
-    
+    color: #8e44ad;
 
 }
 
@@ -299,7 +307,14 @@ footer {
 }
 
 
+
+
+
 /* 以上为css题目部分，下面为卡通白菜的代码，完成css题目后可以看看哦~ */
+/* 以下没有题目了哦~ */
+
+
+
 
 
 
