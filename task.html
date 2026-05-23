@@ -2,14 +2,17 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>25级-OJ测试</title>
+    <title>我的前端小测</title>
 
     <!-- TODO H1：
          修改网页标题为：
          我的前端小测
     -->
 
-    <link rel="stylesheet" href="answer.css">
+    <script src="task.js"></script>
+
+    <!-- <link rel="stylesheet" href="answer.css"> -->
+    <link rel="stylesheet" href="task.css">
 </head>
 
 <body>
@@ -35,6 +38,13 @@
              CSS
              JavaScript
         -->
+        <ul>
+            <li>nihao</li>
+            <li>nihao</li>
+            <li>nihao</li>
+            
+            
+        </ul>
         
 
         <!-- TODO H3：
@@ -46,12 +56,13 @@
         -->
         
 
+
         <h2>我的个人主页</h2>
 
         <!-- TODO H4：
              修改 href 为你喜欢的网站
         -->
-        <a href="https://www.example.com" target="_blank">
+        <a href="https://www.github.com" target="_blank">
             点击访问网站
         </a>
 
@@ -63,14 +74,13 @@
              宽度 150px
         -->
         
-
+        <image src="apple.png" style="width: 150px;"></image>
         <!-- TODO H6：
              添加一个输入框
              提示文字：
              请输入名字
         -->
-        
-
+        <input type="text" placeholder="请输入名字"> </input>
         <!-- TODO H7：
              添加一个带 id 的段落
              id 为：
@@ -78,7 +88,7 @@
 
              内容自定
         -->
-        
+        <h1 id = "my-text">nihao </h1>
 
         <h2>JavaScript练习区域</h2>
 
@@ -89,7 +99,7 @@
         <!-- TODO H8：
              点击按钮执行 showMessage()
         -->
-        <button class="btn">
+        <button class="btn" onclick="showMessage()">
             点我一下
         </button>
 
@@ -101,10 +111,10 @@
              调用：
              changeColor()
         -->
-        <button class="btn">
+
+        <button class="btn" onclick="changeColor()">
             切换背景颜色
         </button>
-
 
     </div>
 
