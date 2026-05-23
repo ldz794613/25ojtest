@@ -10,6 +10,8 @@ TODO J1：
 输出：
 你好，我是xxx
 */
+const name="LJR"
+console.log('你好，我是',name);
 
 
 
@@ -23,7 +25,8 @@ b = 20
 
 输出它们的和
 */
-
+const a=10,b=20;
+console.log(a+b)
 
 
 /*
@@ -38,7 +41,8 @@ isStudent = true
 否则输出：
 我不是学生
 */
-
+const isStudent = true;
+console.log(isStudent? '我是学生':'我不是学生');
 
 
 
@@ -52,8 +56,10 @@ sayHello()
 
 欢迎学习 JavaScript
 */
-
-
+const sayHello=()=>{
+    alert('欢迎学习 JavaScript')
+}
+sayHello();
 
 
 
@@ -72,8 +78,13 @@ TODO J5：
 按钮被点击了！
 */
 function showMessage() {
-    
+    console.log('click')
+    const res=document.getElementById('result')
+   res.innerText='按钮被点击了！'
 }
+let J5Btn=document.querySelector('#J5Btn');
+console.log(J5Btn)
+J5Btn.addEventListener('click',showMessage)
 
 
 
@@ -95,9 +106,18 @@ languages = ["JavaScript", "Python", "Java"]
 
 
 */
+const languages = ["JavaScript", "Python", "Java"];
+languages.unshift('C++');
+console.log('unshift',languages);
+languages.shift()
+console.log('shifted',languages);
 
-
-
+const showArray=(arr)=>{
+    const result2=document.getElementById('result2');
+    const ans=languages.toString();
+    result2.innerText=ans;
+}
+showArray(languages)
 
 
 /*
@@ -124,11 +144,34 @@ scores（成绩，对象类型，包含math、english、chinese）
 
 调用 printStudent(student) 显示结果
 
-
 */
-
-
-
+const student={
+    name:'孙笑川',
+    age:18,
+    gender:'male',
+    grade:'大三',
+    hobbies:['frontend','backend'],
+    scores:{
+        math:114,
+        english:514,
+        chinese:1919
+    }
+}
+const printStudent=(obj)=>{
+    const res3=document.getElementById('result3')
+    // const ans3=`姓名：${obj.name}，年龄：${obj.age}，性别：${obj.gender}，
+    // 年级：${obj.grade}
+    // 爱好：${obj.hobbies.toString()}
+    // 总成绩：${obj.scores.reduce((ac,cur)=>ac+cur,0)}分
+    // `
+    const ans3=`姓名：${obj.name}，年龄：${obj.age}，性别：${obj.gender}，
+    年级：${obj.grade}
+    爱好：${obj.hobbies.toString()}
+    总成绩：${obj.scores.math+obj.scores.english+obj.scores.chinese}分
+    `
+    res3.innerText=ans3;
+}
+printStudent(student)
 
 
 /*
@@ -156,9 +199,10 @@ var bgColors = [
 ];
 
 function changeColor() {
+    console.log('cur',colorIndex,document.body.style)
     colorIndex = (colorIndex + 1) % bgColors.length;
-    
-
+    // document.body.style.backgroundColor=bgColors[colorIndex];
+        document.body.style.background=bgColors[colorIndex];
 
 }
 
