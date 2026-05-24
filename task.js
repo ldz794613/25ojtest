@@ -10,9 +10,8 @@ TODO J1：
 输出：
 你好，我是xxx
 */
-
-
-
+let name="wangzihao";
+console.log("你好，我是"+name)
 
 /*
 TODO J2：
@@ -23,8 +22,8 @@ b = 20
 
 输出它们的和
 */
-
-
+let a=10,b=20;
+console.log(a+b);
 
 /*
 TODO J3：
@@ -38,7 +37,14 @@ isStudent = true
 否则输出：
 我不是学生
 */
-
+let isStudent =true;
+if(isStudent)
+{
+    console.log("我是学生");
+}
+else{
+    console.log("我不是学生")
+}
 
 
 
@@ -52,7 +58,9 @@ sayHello()
 
 欢迎学习 JavaScript
 */
-
+let sayHello=()=>{
+    console.log("欢迎学习 JavaScript");
+}
 
 
 
@@ -72,9 +80,12 @@ TODO J5：
 按钮被点击了！(result1元素中显示)
 */
 function showMessage() {
-    
+  console.log("按钮被点击了！")
+  result1.textContent="按钮被点击了！";
 }
-
+const rusult1=document.querySelector("#result1")
+const btn=document.querySelector(".btn");
+btn.addEventListener("click",showMessage);
 
 
 
@@ -96,9 +107,24 @@ languages = ["JavaScript", "Python", "Java"]
 
 */
 
-
-
-
+let languages=["JavaScript", "Python", "Java"];
+let unLanguages=languages.unshift("C++");
+console.log(unLanguages);
+let shiftLanguages=languages.shift();
+console.log(shiftLanguages);
+let showArray =(arr)=>{
+for(let i=0;i<arr.length;i++)
+{
+    console.log(arr[i])
+    if(i<arr.length-1)
+    {
+        console.log(",");
+    }
+}
+}
+showArray(languages)
+const result2=document.querySelector("#result2")
+result2.textContent=languages;
 
 /*
 TODO J7：
@@ -126,11 +152,24 @@ scores（成绩，对象类型，包含math、english、chinese）
 
 
 */
+let student ={
+    name:"w" ,
+    age:11,
+    gender:"male",
+    grade:1,
+    hobbies:["football","run"],
+    scores :{
+        math:90,
+        english:100,
+        chinese:100
+    }
 
-
-
-
-
+}
+let printStudent=(student)=>{
+    console.log(`姓名: ${student.name}, 年龄: ${student.age}, 年级: ${student.grade}, 爱好: ${student.hobbies[0]}、${student.hobbies[1]}, 年龄: ${student.age}, 总成绩: ${student.scores.math+student.scores.english+student.scores.chinese}`)
+}
+printStudent(student);
+const result3=document.querySelector("#result3")
 /*
 TODO J8（综合题）：
 补全函数：
@@ -157,11 +196,12 @@ var bgColors = [
 
 function changeColor() {
     colorIndex = (colorIndex + 1) % bgColors.length;
-    
-
+     document.body.style.background=bgColors[colorIndex];
+     console.log("wdwdw")
 
 }
-
+const Btn =document.querySelector("#changecolor");
+Btn.addEventListener("click",changeColor)
 
 
 

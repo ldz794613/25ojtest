@@ -9,7 +9,7 @@ body {
     /* TODO C1：
        让页面文字居中
     */
-
+    text-align:center;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
     /* TODO C2：
        添加 8px 圆角
     */
-
+    border-radius:8px;
 
     /* TODO C3：
        添加阴影
@@ -30,18 +30,19 @@ body {
        模糊10px
        颜色 #eee
     */
+    box-shadow: 0 4px 10px #eee;
 
 
     /* TODO C4：
        添加 1px 边框
        颜色 #ddd
     */
-
+  border: #ddd 1px;
 
     transition: transform 0.3s ease;
 }
 
-.container: /*添加伪类,鼠标移入产生如下效果*/{
+.container:hover /*添加伪类,鼠标移入产生如下效果*/{
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
 }
@@ -55,8 +56,9 @@ h1 {
        加粗
        下边距20px
     */
-    
-    
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 20px;
 
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
@@ -106,19 +108,21 @@ img {
        3px 实线
        颜色 #3498db
     */
+    border: 3px
+    border-color#3498db;
+    line-height: normal;
     
-
 
     /* TODO C8：
        圆角 8px
        水平居中
     */
+    border: radius 8px;
     
-
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img: /*添加伪类,鼠标移入产生如下效果*/ {
+img:hover /*添加伪类,鼠标移入产生如下效果*/ {
     transform: scale(1.08) rotate(2deg);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
@@ -134,7 +138,7 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
     /* TODO C9：
        添加 20px 圆角
     */
-    
+    border-radius: 20px;
 
     font-size: 16px;
     font-weight: 600;
@@ -148,10 +152,10 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
    鼠标放按钮上：
    放大 1.05 倍
 */
-.btn:/*添加伪类,鼠标移入产生如下效果*/ {
+.btn:hover/*添加伪类,鼠标移入产生如下效果*/ {
     background: linear-gradient(135deg, #764ba2, #667eea);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
-
+    transform: scale(1.05);
 
 
 }
@@ -166,10 +170,11 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
    字体大小 18px
    添加下划线
 */
- /* */ {
+ /* */ 
+ #my-text{
    
-
-
+    font-size: 18px;
+    text-decoration: underline;
     color: #5a3d8a;
     font-weight: 600;
 
@@ -180,7 +185,7 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
    列表去掉圆点
 */
 ul {
-    
+    text-decoration: none;
 }
 
 /* TODO C13：
@@ -192,10 +197,10 @@ ul {
 */
 li {
     
-
-
-
-
+   margin-bottom: 10px;
+   background-color: #f9f9f9;
+   padding: 8px ;
+   border-radius: 4px;
     text-align: left;
     font-weight: 500;
     color: #333;
@@ -203,7 +208,7 @@ li {
 
 }
 
-li:/*添加伪类,鼠标移入产生如下效果*/ {
+li:hover/*添加伪类,鼠标移入产生如下效果*/ {
     transform: translateX(6px);
     box-shadow: 0 3px 12px rgba(102, 126, 234, 0.2);
 }
@@ -232,8 +237,8 @@ ul ul li {
    去掉下划线
 */
 a {
-    
-
+    text-decoration: none;
+    color: #3498db;
 
 
     font-weight: 600;
@@ -256,7 +261,7 @@ a:hover {
 */
 a:visited {
     
-
+   color: #8e44ad;
 
 
 }
@@ -289,11 +294,12 @@ input[type="text"]:focus {
    颜色 #999
 */
 footer {
-    
+      margin-top: 30px;
+       font-size: 14px;
+      color: #999;
 
-
-
-
+      display:flex;
+      justify-items: center;
 
     padding-top: 20px;
     border-top: 1px solid #eee;
