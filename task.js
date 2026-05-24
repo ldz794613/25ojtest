@@ -3,9 +3,11 @@
 // =====================
 
 /*
-TODO J1：
+TODO J1：×
 创建一个变量 name
 保存你的名字（字符串）
+
+let name="";
 
 输出：
 你好，我是xxx
@@ -17,12 +19,13 @@ console.log("你好，我是"+name);
 
 
 /*
-TODO J2：
+TODO J2：×
 创建两个数字变量：
 
 a = 10
 b = 20
 
+let a=10;
 输出它们的和
 */
 Number a=10;
@@ -32,10 +35,11 @@ console.log(a+b);
 
 
 /*
-TODO J3：
+TODO J3：×
 创建一个布尔值变量：
 
 isStudent = true
+let isStudent=true;
 
 如果是 true 输出：
 我是学生
@@ -57,7 +61,7 @@ else
 
 
 /*
-TODO J4：
+TODO J4：×
 创建函数：
 
 sayHello()
@@ -67,12 +71,17 @@ sayHello()
 欢迎学习 JavaScript
 */
 
+/*
+function sayHello() {
+    alert("欢迎学习 JavaScript");
+}
+*/
 
 
 
 
 /*
-TODO J5：
+TODO J5：×
 补全 showMessage()
 
 点击按钮后：
@@ -93,7 +102,7 @@ function showMessage() {
 
 
 /*
-TODO J6：
+TODO J6：×
 创建数组：
 
 languages = ["JavaScript", "Python", "Java"]
@@ -116,7 +125,7 @@ let languages = ["JavaScript", "Python", "Java"];
 
 
 /*
-TODO J7：
+TODO J7：×对象写法错误
 创建对象：
 
 student
@@ -140,6 +149,7 @@ scores（成绩，对象类型，包含math、english、chinese）
 调用 printStudent(student) 显示结果
 
 
+
 */
 
 
@@ -155,7 +165,7 @@ let student{
 
 
 /*
-TODO J8（综合题）：
+TODO J8（综合题）：×
 补全函数：
 
 changeColor()
