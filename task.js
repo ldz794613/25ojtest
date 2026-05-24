@@ -42,6 +42,7 @@ isStudent = true
 我不是学生
 */
 let isStudent=true;
+
 if(isStudent){
     console.log('我是学生')
 }
@@ -112,9 +113,12 @@ let change=languages.unshift('C++')
 console.log(change)
 let change2=languages.shift()
 console.log(change2)
+
 let two=document.getElementById('result2')
 function showArray(arr){
      two.innerText=arr
+    // 分割
+    document.getElementById("result2").innerHTML = arr.join("，");
 }
 showArray(languages)
 
@@ -165,6 +169,7 @@ let three=document.getElementById('result3')
 function printStudent(obj){
      three.innerHTML=obj
      console.log(obj)
+    //格式要求
 }
 printStudent(student)
 
