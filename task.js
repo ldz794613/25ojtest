@@ -10,6 +10,8 @@ TODO J1：
 输出：
 你好，我是xxx
 */
+String name="刘政轩"；
+console.log("你好，我是"+name);
 
 
 
@@ -23,6 +25,9 @@ b = 20
 
 输出它们的和
 */
+Number a=10;
+Number b=20;
+console.log(a+b);
 
 
 
@@ -38,6 +43,15 @@ isStudent = true
 否则输出：
 我不是学生
 */
+Boolean isStudent=true;
+if(isStudent)
+{
+    console.log("我是学生");
+}
+else
+{
+    console.log("我不是学生");
+}
 
 
 
@@ -95,6 +109,7 @@ languages = ["JavaScript", "Python", "Java"]
 
 
 */
+let languages = ["JavaScript", "Python", "Java"];
 
 
 
@@ -128,7 +143,15 @@ scores（成绩，对象类型，包含math、english、chinese）
 */
 
 
+let student{
+    String name;
+    Number age;
+    String gender;
+    Number grade;
+    
 
+
+}
 
 
 /*

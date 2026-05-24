@@ -6,9 +6,7 @@ body {
     margin: 0;
     padding: 20px;
 
-    /* TODO C1：
-       让页面文字居中
-    */
+   background-position: center;
 
 }
 
@@ -20,7 +18,7 @@ body {
 
     /* TODO C2：
        添加 8px 圆角
-    */
+    */border-radius:8px ;
 
 
     /* TODO C3：
@@ -28,14 +26,16 @@ body {
        水平0
        垂直4px
        模糊10px
-       颜色 #eee
+        #eee
     */
-
+color: #eee;
 
     /* TODO C4：
        添加 1px 边框
        颜色 #ddd
     */
+    border-width: 1px;
+    background-color: #ddd;
 
 
     transition: transform 0.3s ease;
@@ -55,6 +55,10 @@ h1 {
        加粗
        下边距20px
     */
+   width: 28px;
+
+   margin-bottom: 20px;
+
     
     
 
@@ -92,7 +96,7 @@ p {
     /* TODO C6：
        首行缩进 2em
     */
-    
+    text-wrap: 2em;
 
     font-size: 16px;
 }
@@ -106,6 +110,9 @@ img {
        3px 实线
        颜色 #3498db
     */
+    border-width: 3px;
+    border-style: solid;
+    border-color:#3498db ;
     
 
 
@@ -113,6 +120,8 @@ img {
        圆角 8px
        水平居中
     */
+    border-radius: 8px;
+    border-spacing: ;
     
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -134,6 +143,7 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
     /* TODO C9：
        添加 20px 圆角
     */
+    border-radius: 20px;
     
 
     font-size: 16px;
@@ -169,7 +179,7 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
  /* */ {
    
 
-
+    width:18px;
     color: #5a3d8a;
     font-weight: 600;
 
@@ -180,6 +190,7 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
    列表去掉圆点
 */
 ul {
+   
     
 }
 
@@ -190,9 +201,14 @@ ul {
    内边距 8px
    圆角 4px
 */
+
+
 li {
     
-
+margin-bottom: 10px;
+background-color:#f9f9f9 ;
+padding: 8px;
+border-radius: 4px;
 
 
 
@@ -204,7 +220,7 @@ li {
 }
 
 li:/*添加伪类,鼠标移入产生如下效果*/ {
-    transform: translateX(6px);
+    transfopadding-bottom: 10px;rm: translateX(6px);
     box-shadow: 0 3px 12px rgba(102, 126, 234, 0.2);
 }
 
@@ -232,7 +248,7 @@ ul ul li {
    去掉下划线
 */
 a {
-    
+    color: #3498db;
 
 
 
@@ -256,7 +272,7 @@ a:hover {
 */
 a:visited {
     
-
+color: #8e44ad;
 
 
 }
@@ -290,8 +306,9 @@ input[type="text"]:focus {
 */
 footer {
     
-
-
+margin-top: 30px;
+font-size: 14px;
+color:#999;
 
 
 
