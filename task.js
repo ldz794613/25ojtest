@@ -113,6 +113,7 @@ languages = ["JavaScript", "Python", "Java"]
 
 
 */
+let languages = ["JavaScript", "Python", "Java"];
 
 
 
@@ -144,7 +145,19 @@ scores（成绩，对象类型，包含math、english、chinese）
 
 
 */
+const student=
+{
+    name="lzh",
+    age:18,
+    gender:f,
+    grade:freshman,
+    hobbies=[a,b,c],
+    scores:10
+};
+function printStudent
+{
 
+}
 
 
 
@@ -175,9 +188,7 @@ var bgColors = [
 
 function changeColor() {
     colorIndex = (colorIndex + 1) % bgColors.length;
-    
-
-
+    document.body.style.background;
 }
 
 
