@@ -10,7 +10,8 @@ TODO J1：
 输出：
 你好，我是xxx
 */
-
+let name='huazixiang'
+console.log(`你好我是${name}`)
 
 
 
@@ -23,7 +24,9 @@ b = 20
 
 输出它们的和
 */
-
+let a=10;
+let b=20;
+console.log(a+b)
 
 
 /*
@@ -38,7 +41,13 @@ isStudent = true
 否则输出：
 我不是学生
 */
-
+let isStudent=true;
+if(isStudent){
+    console.log('我是学生')
+}
+else{
+    console.log('我不是学生')
+}
 
 
 
@@ -52,7 +61,9 @@ sayHello()
 
 欢迎学习 JavaScript
 */
-
+function sayHello(){
+    alert('欢迎学习JavaScript')
+}
 
 
 
@@ -71,8 +82,9 @@ TODO J5：
 
 按钮被点击了！(result1元素中显示)
 */
+let para=document.getElementById('result1')
 function showMessage() {
-    
+    para.innerText='按钮被点击了'
 }
 
 
@@ -95,6 +107,17 @@ languages = ["JavaScript", "Python", "Java"]
 
 
 */
+let languages = ["JavaScript", "Python", "Java"]
+let change=languages.unshift('C++')
+console.log(change)
+let change2=languages.shift()
+console.log(change2)
+let two=document.getElementById('result2')
+function showArray(arr){
+     two.innerText=arr
+}
+showArray(languages)
+
 
 
 
@@ -126,7 +149,24 @@ scores（成绩，对象类型，包含math、english、chinese）
 
 
 */
-
+let student={
+      name:'name',
+      age:'age',
+      gender:'gender',
+      grade:'grade',
+      hobbies:['hobby1','hobby2'],
+      scores:{
+        math:'math',
+        english:'eng',
+        chinese:'c'
+      }
+}
+let three=document.getElementById('result3')
+function printStudent(obj){
+     three.innerHTML=obj
+     console.log(obj)
+}
+printStudent(student)
 
 
 
@@ -157,6 +197,8 @@ var bgColors = [
 
 function changeColor() {
     colorIndex = (colorIndex + 1) % bgColors.length;
+    document.body.style.background=bgColors[colorIndex]
+
     
 
 

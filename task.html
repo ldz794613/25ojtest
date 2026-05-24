@@ -12,17 +12,20 @@
          task.js
     -->
 
-    <title>25级-OJ测试</title>
-    <link rel="stylesheet"    >
-    <script defer   ></script>
+    <title>我的前端小测</title>
+    <link rel="stylesheet"   href="./task.css" >
+    <script defer src="./task.js"  ></script>
+    
 
 
 </head>
 
 <body>
-
+     
     <div class="container">
-
+         <ul>
+            <li></li>
+         </ul>
         <h1>前端入门小测试</h1>
 
         <p>
@@ -42,6 +45,11 @@
              CSS
              JavaScript
         -->
+             <ul>
+                <li id=" HTML">HTML<ul><li>标签</li><li>属性</li></ul></li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+             </ul>
         
 
         <!-- TODO H3：
@@ -51,6 +59,7 @@
                  标签
                  属性
         -->
+            
         
 
         <h2>我的个人主页</h2>
@@ -58,7 +67,7 @@
         <!-- TODO H4：
              修改 href 为你喜欢的网站
         -->
-        <a href="https://www.example.com" target="_blank">
+        <a href="https://www.runoob.com" target="_blank">
             点击访问网站
         </a>
 
@@ -69,13 +78,16 @@
              使用相对路径
              宽度 150px
         -->
+             <img src="./114514.jpg" alt="" width="150px">
         
 
         <!-- TODO H6：
              添加一个输入框
              提示文字：
              请输入名字
+             
         -->
+             <input type="text" value="请输入名字">
         
 
         <!-- TODO H7：
@@ -85,6 +97,7 @@
 
              内容自定
         -->
+             <p id="my-text">11111111111111</p>
         
 
         <h2>JavaScript练习区域</h2>
@@ -104,7 +117,7 @@
         <!-- TODO H8：
              点击按钮执行 showMessage()
         -->
-        <button class="btn"   >
+        <button class="btn"  onclick="showMessage()" >
             点我一下
         </button>
 
@@ -116,7 +129,8 @@
              调用：
              changeColor()
         -->
-        <button class="btn"    >
+             
+        <button class="btn"  onclick="changeColor()"  >
             切换背景颜色
         </button>
 
