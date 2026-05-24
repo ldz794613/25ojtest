@@ -9,6 +9,7 @@ body {
     /* TODO C1：
        让页面文字居中
     */
+    text-align: center;
 
 }
 
@@ -21,8 +22,7 @@ body {
     /* TODO C2：
        添加 8px 圆角
     */
-
-
+    border-radius: 8px;
     /* TODO C3：
        添加阴影
        水平0
@@ -30,18 +30,20 @@ body {
        模糊10px
        颜色 #eee
     */
-
+    box-shadow: 0 4px 10px rgba(242, 245, 242, 0);
 
     /* TODO C4：
        添加 1px 边框
        颜色 #ddd
     */
-
-
+    border: 1px solid black;
     transition: transform 0.3s ease;
 }
 
-.container: /*添加伪类,鼠标移入产生如下效果*/{
+.container
+
+/*添加伪类,鼠标移入产生如下效果*/
+    {
     transform: translateY(-5px);
     box-shadow: 0 12px 40px rgba(102, 126, 234, 0.4);
 }
@@ -55,8 +57,9 @@ h1 {
        加粗
        下边距20px
     */
-    
-    
+    width: 28px;
+    padding-bottom: 20px;
+
 
     background: linear-gradient(135deg, #667eea, #764ba2);
     -webkit-background-clip: text;
@@ -92,7 +95,6 @@ p {
     /* TODO C6：
        首行缩进 2em
     */
-    
 
     font-size: 16px;
 }
@@ -106,19 +108,23 @@ img {
        3px 实线
        颜色 #3498db
     */
-    
+    border: 3px solid blue;
 
 
     /* TODO C8：
        圆角 8px
        水平居中
     */
-    
+    border-radius: 8px;
+    margin: auto;
 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-img: /*添加伪类,鼠标移入产生如下效果*/ {
+img
+
+/*添加伪类,鼠标移入产生如下效果*/
+    {
     transform: scale(1.08) rotate(2deg);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
 }
@@ -134,7 +140,8 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
     /* TODO C9：
        添加 20px 圆角
     */
-    
+    border-radius: 20px;
+
 
     font-size: 16px;
     font-weight: 600;
@@ -148,7 +155,10 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
    鼠标放按钮上：
    放大 1.05 倍
 */
-.btn:/*添加伪类,鼠标移入产生如下效果*/ {
+.btn
+
+/*添加伪类,鼠标移入产生如下效果*/
+    {
     background: linear-gradient(135deg, #764ba2, #667eea);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
 
@@ -166,13 +176,12 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
    字体大小 18px
    添加下划线
 */
- /* */ {
-   
-
-
+/* */
+my-text{
+    width:18px;
+    text-underline-offset: auto;
     color: #5a3d8a;
     font-weight: 600;
-
 }
 
 /* ========== 列表 ========== */
@@ -180,7 +189,7 @@ img: /*添加伪类,鼠标移入产生如下效果*/ {
    列表去掉圆点
 */
 ul {
-    
+
 }
 
 /* TODO C13：
@@ -191,11 +200,10 @@ ul {
    圆角 4px
 */
 li {
-    
-
-
-
-
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 4px;
     text-align: left;
     font-weight: 500;
     color: #333;
@@ -203,7 +211,10 @@ li {
 
 }
 
-li:/*添加伪类,鼠标移入产生如下效果*/ {
+li
+
+/*添加伪类,鼠标移入产生如下效果*/
+    {
     transform: translateX(6px);
     box-shadow: 0 3px 12px rgba(102, 126, 234, 0.2);
 }
@@ -212,11 +223,8 @@ li:/*添加伪类,鼠标移入产生如下效果*/ {
    子列表缩进20px
 */
 ul ul {
-    
-
-
+    margin-left: 20px;
     margin-top: 8px;
-
 }
 
 ul ul li {
@@ -232,10 +240,7 @@ ul ul li {
    去掉下划线
 */
 a {
-    
-
-
-
+    color: #3498db;
     font-weight: 600;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -255,10 +260,7 @@ a:hover {
    #8e44ad
 */
 a:visited {
-    
-
-
-
+    color: #8e44ad;
 }
 
 /* ========== 输入框 ========== */
@@ -289,12 +291,10 @@ input[type="text"]:focus {
    颜色 #999
 */
 footer {
-    
-
-
-
-
-
+    margin: auto;
+    margin-top: 30px;
+    width: 14px;
+    color:rgba(102, 126, 234, 0.4);
     padding-top: 20px;
     border-top: 1px solid #eee;
 
@@ -335,8 +335,15 @@ footer {
 }
 
 @keyframes cabbage-bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
 }
 
 /* ===== 外层包裹叶子 ===== */
@@ -354,7 +361,7 @@ footer {
     top: 5px;
     left: 0;
     transform: rotate(-15deg);
-    box-shadow: inset -5px -5px 15px rgba(0,60,0,0.2);
+    box-shadow: inset -5px -5px 15px rgba(0, 60, 0, 0.2);
 }
 
 .ol-2 {
@@ -365,7 +372,7 @@ footer {
     top: 8px;
     left: 5px;
     transform: rotate(12deg);
-    box-shadow: inset 5px -5px 15px rgba(0,60,0,0.15);
+    box-shadow: inset 5px -5px 15px rgba(0, 60, 0, 0.15);
 }
 
 .ol-3 {
@@ -376,7 +383,7 @@ footer {
     top: -10px;
     left: -8px;
     transform: rotate(-35deg);
-    box-shadow: inset -3px -3px 10px rgba(0,60,0,0.2);
+    box-shadow: inset -3px -3px 10px rgba(0, 60, 0, 0.2);
 }
 
 .ol-4 {
@@ -387,7 +394,7 @@ footer {
     top: -10px;
     right: -8px;
     transform: rotate(35deg);
-    box-shadow: inset 3px -3px 10px rgba(0,60,0,0.2);
+    box-shadow: inset 3px -3px 10px rgba(0, 60, 0, 0.2);
 }
 
 /* ===== 白菜身体 ===== */
@@ -401,7 +408,7 @@ footer {
     left: 10px;
     z-index: 1;
     box-shadow: inset -10px -10px 25px rgba(0, 80, 0, 0.25),
-                inset 10px 10px 25px rgba(255, 255, 255, 0.4);
+        inset 10px 10px 25px rgba(255, 255, 255, 0.4);
     overflow: hidden;
 }
 
@@ -455,7 +462,7 @@ footer {
     background: white;
     border-radius: 50%;
     top: 2px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
     overflow: hidden;
 }
 
@@ -530,6 +537,6 @@ footer {
     border-radius: 0 0 12px 12px;
     margin: -2px auto 0;
     z-index: 1;
-    box-shadow: inset 0 4px 8px rgba(0,0,0,0.05);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
     top: 10px;
 }

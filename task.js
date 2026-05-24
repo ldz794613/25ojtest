@@ -11,7 +11,9 @@ TODO J1：
 你好，我是xxx
 */
 
-
+let name;
+name="lzh";
+console.log("你好，我是"+name);
 
 
 /*
@@ -23,7 +25,11 @@ b = 20
 
 输出它们的和
 */
-
+let a,b;
+a=10;
+b=20;
+sum=a+b;
+console.log(sum);
 
 
 /*
@@ -38,7 +44,16 @@ isStudent = true
 否则输出：
 我不是学生
 */
-
+Boolean:isStudent;
+isStudent=true;
+if(isStudent==true)
+{
+    console.log(我是学生);
+}
+else
+{
+    console.log(我不是学生);
+}
 
 
 
@@ -52,8 +67,10 @@ sayHello()
 
 欢迎学习 JavaScript
 */
-
-
+function sayHello()
+{
+    alert('欢迎学习 JavaScript');
+}
 
 
 
@@ -71,8 +88,9 @@ TODO J5：
 
 按钮被点击了！(result1元素中显示)
 */
-function showMessage() {
-    
+function showMessage() 
+{
+    result1="按钮被点击了";
 }
 
 
