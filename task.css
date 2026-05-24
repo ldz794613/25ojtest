@@ -37,7 +37,8 @@ body {
        颜色 #eee
     */
     box-shadow: #eee blur(10px);
-
+    /* 设置阴影分布 */
+    box-shadow: 0 4px 10px #eee;
 
 
     /* TODO C4：
@@ -45,8 +46,8 @@ body {
        颜色 #ddd
     */
     border: 1px #ddd;
-
-
+    /* 边框样式 */
+    border: 1px solid #ddd;
     transition: transform 0.3s ease;
 }
 
@@ -75,7 +76,10 @@ h1 {
        加粗
        下边距20px
     */
-
+     font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* 样式？？？ */
 
 
     background: linear-gradient(135deg, #667eea, #764ba2);
@@ -113,7 +117,8 @@ p {
        首行缩进 2em
     */
     inset-inline-start: 2em;
-
+    /* 首行缩进 */
+     text-indent: 2em;
 
     font-size: 16px;
 }
@@ -190,7 +195,7 @@ img:hover::after
 }
 
 
-
+/* 实体/伪类 */
 
 
 .btn::after{
@@ -275,8 +280,9 @@ li:hover::after
    子列表缩进20px
 */
 ul ul {
-     
 
+    /* 改： */
+     margin-left: 20px;
 
     margin-top: 8px;
 
@@ -350,6 +356,8 @@ input[type="text"]:focus {
    颜色 #999
 */
 footer {
+    /* 居中 */
+    text-align: center;
     margin-top: 30px;
     font-size: 14px;
     color: #999;
